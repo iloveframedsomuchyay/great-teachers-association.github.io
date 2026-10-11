@@ -199,7 +199,14 @@ async function loadGame(data) {
         info,
         receiveInstance,
     ) => {
-        const wasm = await (await fetch(wasm_content ? wasm_content : "index.wasm")).arrayBuffer();
+        const wasmUrl = wasm_content ? wasm_content : "index.wasm";
+        const wasm = await (await fetch(wasmUrl)).arrayBuffer();
+        const expectedHash = (await (await fetch(`${wasmUrl}.sha256`)).text()).trim();
+        const digest = await crypto.subtle.digest("SHA-256", wasm);
+        const actualHash = Array.from(new Uint8Array(digest)).map((b) => b.toString(16).padStart(2, "0")).join("");
+        if (!expectedHash || actualHash !== expectedHash) {
+            throw new Error("WASM integrity verification failed");
+        }
         const module = await WebAssembly.instantiate(wasm, info);
         return receiveInstance(module.instance, module);
     };
