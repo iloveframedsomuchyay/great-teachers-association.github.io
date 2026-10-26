@@ -24,6 +24,12 @@ let isTouch = isMobile && window.matchMedia('(pointer: coarse)').matches;
 
 document.body.dataset.isTouch = isTouch ? 1 : 0;
 
+// The engine asks for pointer lock once it is fullscreen. On touch that freezes
+// every pointer at 0,0, so drags measure zero and the sticks/menu swipes die.
+if (isTouch) {
+    Element.prototype.requestPointerLock = () => {};
+}
+
 const dataSize = 130 * 1024 * 1024;
 const textDecoder = new TextDecoder();
 let haveOriginalGame = true;
@@ -260,6 +266,18 @@ async function loadGame(data) {
         lockTargetWhilePressed: false,
         tapTarget: document.querySelector('.touch-control.menu'),
     }]);
+    // Opening the menu leaves fullscreen so the browser bars are reachable again.
+    document.querySelector('.touch-control.menu').addEventListener('pointerdown', () => {
+        if (document.fullscreenElement) {
+            document.exitFullscreen().catch(() => {});
+        }
+    });
+    // Back in the game after the menu: return to fullscreen.
+    new MutationObserver(() => {
+        if (isTouch && document.body.dataset.stateMenu === '0' && !document.fullscreenElement) {
+            document.documentElement.requestFullscreen?.().catch(() => {});
+        }
+    }).observe(document.body, { attributes: true, attributeFilter: ['data-state-menu'] });
     emulator.AddDisplayButtonEventListeners(0, [{
         buttonIndex: 3,
         lockTargetWhilePressed: false,
