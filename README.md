@@ -92,3 +92,54 @@ This is an unofficial, non-commercial fan project. It is not affiliated with, en
 The source code in this repository does not include the game's data files (models, textures, audio, maps). It is built on an open-source reimplementation of the game engine, and you need your own legitimate copy of GTA: Vice City to use it. The maintainer does not authorize anyone to redistribute the game's files and is not responsible for how third parties obtain, host, or share them, nor for any consequences of unauthorized use of this project.
 
 This software is provided "as is", without warranty of any kind. See the [LICENSE](LICENSE) file for the full liability disclaimer.
+
+# Cheats
+
+
+##Weapons, Health, and Armor
+
+• ASPIRINE — Full Health (Instant)
+• PRECIOUSPROTECTION — Full Body Armor
+• THUGSTOOLS — Weapon Set 1 (Level 1 light weapons: bat, Molotovs, flamethrower)
+• PROFESSIONALTOOLS — Weapon Set 2 (Level 2 medium weapons: grenades, Python, rocket launcher)
+• NUTTERTOOLS — Weapon Set 3 (Level 3 heavy weapons: minigun, chainsaw, fast shotgun)
+• ICANTTAKEITANYMORE — Suicie
+
+
+## Wanted Level
+
+• LEAVEMEALONE — Clear/Remove Wanted Level
+• YOUWONTTAKEMEALIVE — Increase Wanted Level by 2 stars
+
+## Vehicle Spawns
+
+• PANZER — Spawn a Rhino (Tank)
+• GETTHEREFAST — Spawn a Sabre Turbo
+• GETTHEREQUICKLY / TRAVELINSTYLE — Spawn a Bloodring Banger
+• GETTHEREVERYFASTINDEED — Spawn a Hotring Racer #1
+• GETTHEREAMAZINGLYFAST — Spawn a Hotring Racer #2
+• ROCKANDROLLCAR — Spawn a Love Fist Limo
+• THELASTRIDE — Spawn a Romero's Hearse
+• RUBBISHCAR — Spawn a Trashmaster
+• AMERICAHELICOPTER — Spawn a Hunter (Helicopter)
+
+
+## World & Gameplay Modifiers
+
+• COMEFLYWITHME — Flying cars
+• SEAWAYS — Cars can drive on water
+• BIGBANG — Blow up all nearby vehicles
+• GREENLIGHT — All traffic lights turn green
+• ONSPEED — Fast motion
+• BOOOOOORING — Slow motion
+• ALOVELYDAY — Sunny weather
+• CATSANDDOGS — Stormy weather
+• CANTSEEATHING — Foggy weather
+
+
+## Pedestrian & Riot Cheats
+
+• FIGHTFIGHTFIGHT — Pedestrians start a riot
+• NOBODYLIKESME — Pedestrians attack you
+• OURGODGIVENRIGHTTOBEARARMS — Give all pedestrians weapons
+• CHICKSWITHGUNS — Female pedestrians carry guns
