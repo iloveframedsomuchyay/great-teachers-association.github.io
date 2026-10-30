@@ -96,7 +96,7 @@ This software is provided "as is", without warranty of any kind. See the [LICENS
 # Cheats
 
 
-##Weapons, Health, and Armor
+### Weapons, Health, and Armor
 
 • ASPIRINE — Full Health (Instant)
 • PRECIOUSPROTECTION — Full Body Armor
@@ -106,12 +106,12 @@ This software is provided "as is", without warranty of any kind. See the [LICENS
 • ICANTTAKEITANYMORE — Suicie
 
 
-## Wanted Level
+### Wanted Level
 
 • LEAVEMEALONE — Clear/Remove Wanted Level
 • YOUWONTTAKEMEALIVE — Increase Wanted Level by 2 stars
 
-## Vehicle Spawns
+### Vehicle Spawns
 
 • PANZER — Spawn a Rhino (Tank)
 • GETTHEREFAST — Spawn a Sabre Turbo
@@ -124,7 +124,7 @@ This software is provided "as is", without warranty of any kind. See the [LICENS
 • AMERICAHELICOPTER — Spawn a Hunter (Helicopter)
 
 
-## World & Gameplay Modifiers
+### World & Gameplay Modifiers
 
 • COMEFLYWITHME — Flying cars
 • SEAWAYS — Cars can drive on water
@@ -137,7 +137,7 @@ This software is provided "as is", without warranty of any kind. See the [LICENS
 • CANTSEEATHING — Foggy weather
 
 
-## Pedestrian & Riot Cheats
+### Pedestrian & Riot Cheats
 
 • FIGHTFIGHTFIGHT — Pedestrians start a riot
 • NOBODYLIKESME — Pedestrians attack you
